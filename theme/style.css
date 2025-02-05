@@ -120,8 +120,24 @@ a{
   outline: 1px outset #212529;
   border-radius: 12px;
   padding: 10px;
+  transition: 400ms;
   height: 410px;
   width: 100%;
+}
+
+.game .sep .box1:hover::before{
+  display: flex;
+    position: absolute;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+    content: 'Mountain Tops';
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-image:  fill 0 linear-gradient(#0001, #0009);
 }
 
 .game .sep .box2{
@@ -137,7 +153,6 @@ a{
   width: 100%;
 }
 
-
 .game .sep .box2 .up{
   display: flex;
   position: relative;
@@ -147,8 +162,24 @@ a{
   background-position: center;
   background-size: cover;
   padding: 10px;
+  transition: 400ms;
   height: 137px;
   width: 100%;
+}
+
+.game .sep .box2 .up:hover::before{
+  display: flex;
+    position: absolute;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+    content: 'Mountain Peek';
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-image:  fill 0 linear-gradient(#0001, #0009);
 }
 
 .game .sep .box2 .align{
@@ -168,8 +199,13 @@ a{
   background-image: url(https://plus.unsplash.com/premium_photo-1667530527025-0dbeb1777692?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-size: cover;
+  transition: 400ms;
   height: 137px;
   width: 100%;
+}
+
+.box2 .align .in:hover{
+  transform: scale(.9);
 }
 
 .box2 .align .on{
@@ -180,8 +216,13 @@ a{
   background-image: url(https://images.unsplash.com/photo-1458668383970-8ddd3927deed?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-size: cover;
+  transition: 400ms;
   height: 137px;
   width: 100%;
+}
+
+.box2 .align .on:hover{
+  transform: scale(.9);
 }
 
 .game .sep .box2 .down{
@@ -198,6 +239,7 @@ a{
   position: relative;
   align-items: center;
   justify-content: center;
+  transition: 400ms;
   background-image: url(https://images.unsplash.com/photo-1535224206242-487f7090b5bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-size: cover;
@@ -205,15 +247,24 @@ a{
   width: 100%;
 }
 
+.box2 .down .kl:hover{
+  transform: scale(.9);
+}
+
 .box2 .down .lk{
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+  transition: 400ms;
   background-image: url(https://images.unsplash.com/photo-1516825994218-b2d93290b0fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-size: cover;
   height: 137px;
   width: 100%;
+}
+
+.box2 .down .lk:hover{
+  transform: scale(.9);
 }
 
