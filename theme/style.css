@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background: light-dark(#edf2f4, #0b090a);
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root{
+  color-scheme: light dark;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sec{
+    display: grid;
+    position: relative;
+    place-items: center;
+    padding: 50px;
+    min-height: 100dvh;
+    min-width: 900px;
+    width: 100%;
+}
+
+.sec .tab{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: light-dark(#212529, aliceblue);
+  border-radius: 20px;
+  outline: 1px inset light-dark(aliceblue, #252422);
+  padding: 15px;
+  height: 600px;
+  width: 800px;
+}
+
+.sec .tab .game{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 570px;
+  width: 100%;
+}
+
+.sec .tab .game .head{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  outline: 1px outset #212529;
+  gap: 20px;
+  padding: 30px;
+  height: 150px;
+  width: 100%;
+}
+
+.sec .tab .game .head h1{
+  position: relative;
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: linear-gradient(to left, #e9edc9, #edddd4, #fefae0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition-timing-function: linear;
+  animation: animated 45s linear infinite;
+  color: transparent;
+}
+
+@keyframes animated{
+  to{background-position-x: 500px;}
+}
+
+.sec .tab .game .head h1::after{
+  position: absolute;
+  inset: 0 0 0 0;
+  letter-spacing: 3px;
+  content: attr(data-content);
+  z-index: 2;
+  -webkit-text-stroke: .1px #252422;
+}
+
+.sec .tab .game .sep{
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  height: 450px;
+  width: 100%;
+}
+
+.game .sep .box1{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  outline: 1px outset #212529;
+  border-radius: 12px;
+  padding: 10px;
+  height: 410px;
+  width: 100%;
+}
+
+.game .sep .box2{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  outline: 1px outset #212529;
+  overflow: hidden;
+  height: 410px;
+  width: 100%;
+}
+
+
+.game .sep .box2 .up{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  height: 137px;
+  width: 100%;
+}
+
+.game .sep .box2 .align{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 137px;
+  width: 100%;
+}
+
+.box2 .align .in{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1667530527025-0dbeb1777692?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  height: 137px;
+  width: 100%;
+}
+
+.box2 .align .on{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1458668383970-8ddd3927deed?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  height: 137px;
+  width: 100%;
+}
+
+.game .sep .box2 .down{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 137px;
+  width: 100%;
+}
+
+.box2 .down .kl{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1535224206242-487f7090b5bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  height: 137px;
+  width: 100%;
+}
+
+.box2 .down .lk{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1516825994218-b2d93290b0fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  height: 137px;
+  width: 100%;
+}
+
