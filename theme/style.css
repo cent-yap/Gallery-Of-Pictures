@@ -109,6 +109,18 @@ a{
   width: 100%;
 }
 
+.game .sep .parent{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  outline: 1px outset #212529;
+  border-radius: 12px;
+  height: 410px;
+  width: 100%;
+}
+
 .game .sep .box1{
   display: flex;
   position: relative;
@@ -117,27 +129,29 @@ a{
   background-image: url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-size: cover;
-  outline: 1px outset #212529;
-  border-radius: 12px;
   padding: 10px;
+  overflow: hidden;
   transition: 400ms;
   height: 410px;
   width: 100%;
 }
 
+.game .sep .box1:hover{
+  transform: scale(1.2);
+}
+
 .game .sep .box1:hover::before{
   display: flex;
-    position: absolute;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 20px;
-    top: 0px; bottom: 0px;
-    left: 0px; right: 0px;
-    content: 'Mountain Tops';
-    color: aliceblue;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-image:  fill 0 linear-gradient(#0001, #0009);
+  position: absolute;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 50px;
+  inset: 0 0 0 0;
+  content: 'Mountain Tops';
+  color: aliceblue;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-image:  fill 0 linear-gradient(#0001, #0009);
 }
 
 .game .sep .box2{
@@ -150,6 +164,16 @@ a{
   outline: 1px outset #212529;
   overflow: hidden;
   height: 410px;
+  width: 100%;
+}
+
+.game .sep .box2 .first{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 137px;
   width: 100%;
 }
 
@@ -167,19 +191,22 @@ a{
   width: 100%;
 }
 
+.game .sep .box2 .up:hover{
+  transform: scale(1.1);
+}
+
 .game .sep .box2 .up:hover::before{
   display: flex;
-    position: absolute;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 20px;
-    top: 0px; bottom: 0px;
-    left: 0px; right: 0px;
-    content: 'Mountain Peek';
-    color: aliceblue;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-image:  fill 0 linear-gradient(#0001, #0009);
+  position: absolute;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px 40px; 
+  inset: 0 0 0 0;
+  content: 'Mountain Peek';
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 600;
+  border-image:  fill 0 linear-gradient(#0001, #0009);
 }
 
 .game .sep .box2 .align{
